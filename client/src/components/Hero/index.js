@@ -14,7 +14,7 @@ const Hero = () => {
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     return (
-            <Stack>
+            <Stack pt="2">
                 <Circle position="absolute" bg="blue.100" opacity="0.1" alignSelf="flex-end" w="300px" h="300px"/>
                 <Flex direction={isNotSmallerScreen ? "row" : "column"}
                     spacing="200px" p={isNotSmallerScreen ? "32" : "0"}
@@ -31,6 +31,7 @@ const Hero = () => {
                         boxSize="300px" src='https://avatars.githubusercontent.com/u/84944528?v=4' />
                 </Flex> 
             </Stack>
+
     )
 }
 
