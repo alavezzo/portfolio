@@ -22,13 +22,13 @@ function Nav() {
                         </Link>
                 
                     
-                        <Link as={ReactLink} to="/about">
+                        <Link as={ReactLink} to="/portfolio">
                             <Text display="block" >Portfolio</Text>
                         </Link>
                   
           
-                        <Link as={ReactLink} to="/about">
-                            <Text display="block" >Contact</Text>
+                        <Link as={ReactLink} to="/contact">
+                            <Text display="block">Contact</Text>
                         </Link>
               
                     </Stack>
