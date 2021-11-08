@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FaLinkedin, FaUserNinja, FaGithub } from 'react-icons/fa'
 import { IconButton } from "@chakra-ui/button"
 import { useColorMode } from "@chakra-ui/color-mode"
-import { Flex, Spacer } from "@chakra-ui/react"
+
 
 const Footer = () => {
     const { colorMode, toggleColorMode } = useColorMode();

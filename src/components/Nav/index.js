@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ReactLink } from 'react-router-dom';
 import { Box, Link, Stack, Text} from '@chakra-ui/react';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { useColorModeValue } from '@chakra-ui/color-mode'
 
 function Nav() {
     
@@ -17,17 +18,17 @@ function Nav() {
                 flexBasis={{ base: "100%", md: "auto"}} >
                     <Stack spacing={8} align='center' justify={['center', 'space-between', 'flex-end', 'flex-end']} direction={['column', 'row', 'row', 'row']} pt={[4,4,0,0]}
                     >
-                        <Link as={ReactLink} to="/about">
+                        <Link color={useColorModeValue('midnightGreen', 'platinum')} as={ReactLink} to="/about">
                             <Text display="block" >About</Text>
                         </Link>
                 
                     
-                        <Link as={ReactLink} to="/portfolio">
+                        <Link color={useColorModeValue('midnightGreen', 'platinum')} as={ReactLink} to="/portfolio">
                             <Text display="block" >Portfolio</Text>
                         </Link>
                   
           
-                        <Link as={ReactLink} to="/contact">
+                        <Link color={useColorModeValue('midnightGreen', 'platinum')} as={ReactLink} to="/contact">
                             <Text display="block">Contact</Text>
                         </Link>
               
