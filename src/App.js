@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
-import loadable from '@loadable/component'
 import { VStack } from "@chakra-ui/react"
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './components/About';
-
-
-// import ContactForm from './components/Contact'
+import ContactForm from './components/Contact';
+import Portfolio from './components/Portfolio';
+import Hero from './components/Hero';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { useColorModeValue } from '@chakra-ui/color-mode';
-
-const ContactForm = loadable(() => import('./components/Contact')) ;
-const Portfolio = loadable(() => import('./components/Portfolio')) ;
-const Hero = loadable(() => import('./components/Hero'));
 
 
 function App() {

@@ -29,7 +29,7 @@ const ContactForm = () => {
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="email">Email address:</FormLabel>
-                        <Input bg='platinum' id = "email" id="email" defaultValue={email} onBlur={handleChange}></Input>
+                        <Input bg='platinum' type = "email" id="email" defaultValue={email} onBlur={handleChange}></Input>
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="message">Message:</FormLabel>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaLinkedin, FaUserNinja, FaGithub, FaSun } from 'react-icons/fa'
 import { IconButton } from "@chakra-ui/button"
 import { useColorMode } from "@chakra-ui/color-mode"
