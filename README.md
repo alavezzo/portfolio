@@ -21,7 +21,7 @@
   ## Instructions
   Visit its homepage @ https://alavezzo.github.io/portfolio
   ## Usage
-  Reach out to me if with any opportunities!
+  Hit the ninja button for dark mode and the sun button for light mode!
   
   
   ## License 
