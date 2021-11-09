@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1c725f15.chunk.css",
+    "main.js": "/portfolio/static/js/main.a192662a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a192662a.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.f9c738a3.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.f9c738a3.js.map",
+    "static/js/2.52c7514c.chunk.js": "/portfolio/static/js/2.52c7514c.chunk.js",
+    "static/js/2.52c7514c.chunk.js.map": "/portfolio/static/js/2.52c7514c.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.1c725f15.chunk.css.map": "/portfolio/static/css/main.1c725f15.chunk.css.map",
+    "static/js/2.52c7514c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.52c7514c.chunk.js.LICENSE.txt",
+    "static/media/AnthonyLavezzoResume.b9bff677.pdf": "/portfolio/static/media/AnthonyLavezzoResume.b9bff677.pdf",
+    "static/media/Cocktail and Music Pairings.png": "/portfolio/static/media/Cocktail and Music Pairings.bd964d25.png",
+    "static/media/Crowdsourced Covid Venue Reviews.png": "/portfolio/static/media/Crowdsourced Covid Venue Reviews.22c61be2.png",
+    "static/media/Employee Database Interface.png": "/portfolio/static/media/Employee Database Interface.a3ea4982.png",
+    "static/media/Weather Dashboard.png": "/portfolio/static/media/Weather Dashboard.a840126a.png",
+    "static/media/Work Day Scheduler.png": "/portfolio/static/media/Work Day Scheduler.29f22d92.png",
+    "static/media/my_character (1).svg": "/portfolio/static/media/my_character (1).eea7702d.svg",
+    "static/media/my_character.svg": "/portfolio/static/media/my_character.e3790483.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9c738a3.js",
+    "static/js/2.52c7514c.chunk.js",
+    "static/css/main.1c725f15.chunk.css",
+    "static/js/main.a192662a.chunk.js"
+  ]
+}
