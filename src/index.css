@@ -16,3 +16,14 @@ background: -webkit-linear-gradient(90deg, hsla(307, 45%, 14%, 1) 0%, hsla(355, 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#351431", endColorstr="#F1515E", GradientType=1 );
 }
 
+.navActive {
+    color: blue;
+  }
+
+.platinum {
+    color: #DFE0DC,
+}
+
+.midnightGreen {
+    color: #02394A,
+}

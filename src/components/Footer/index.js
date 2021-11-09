@@ -1,22 +1,32 @@
 import React, { useState } from 'react';
-import { FaLinkedin, FaUserNinja, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaUserNinja, FaGithub, FaSun } from 'react-icons/fa'
 import { IconButton } from "@chakra-ui/button"
 import { useColorMode } from "@chakra-ui/color-mode"
+import { HStack, Link, Button } from '@chakra-ui/react';
 
-
-const Footer = () => {
+const Footer = ({ home, setIsResumeOpen }) => {
     const { colorMode, toggleColorMode } = useColorMode();
-    const isDark = colorMode === "dark"; 
+    const isDark = colorMode === "dark";
 
-    return (    
+    return (
 
         <footer>
+        <HStack>
+            <IconButton icon={isDark ? <FaSun/> : <FaUserNinja /> } isRound="true" onClick={toggleColorMode}></IconButton>
+            <Link href={'https://linkedin.com/in/lavezzoae'} isExternal>
+            <IconButton icon={<FaLinkedin />} isRound="true">
+            </IconButton>
+            </Link>
+            <Link href={'https://github.com/alavezzo'} isExternal>
+            <IconButton icon={<FaGithub />} isRound="true"></IconButton>
+            </Link>
+            {!home && (
+                <Button onClick={() => setIsResumeOpen(true)}>Resume</Button>
 
-                <IconButton icon={isDark ? <FaUserNinja/> : <FaLinkedin /> } isRound="true" onClick={toggleColorMode}></IconButton>
-
-                <IconButton icon={<FaGithub/>} isRound="true"></IconButton>
-
+            )}
+        </HStack>
         </footer>
+
     )
 }
 

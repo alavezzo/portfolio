@@ -1,18 +1,35 @@
 import Nav from '../Nav';
-import {  Flex, Link } from '@chakra-ui/react';
+import { Flex, Link } from '@chakra-ui/react';
 import {Link as ReactLink } from "react-router-dom";
 import { useMediaQuery } from '@chakra-ui/media-query';
-import React from 'react';
+import React, {useState} from 'react';
 
-const Header = () => {    
+const Header = ({ home, setHome }) => {   
+  
+    const [sections] = useState([
+      {
+        name: 'About'
+      },
+      {
+        name: 'Portfolio'
+      },
+      {
+        name: 'Contact'
+      }
+    ]);
+    
+    const [currentSection, setCurrentSection] = useState('')
+
+    
     return (
       <>
         <Flex w="100%" mt="0" p="0" ml="20">
-            <Link as={ReactLink} to="/">
+            <Link onClick={()=> setHome(true)} as={ReactLink} to="/">
                 <img width="20px" height="20px" src={require(`../../assets/icon/AL_logo.png`).default}/>
             </Link>
+            
         </Flex>
-        <Nav mt="0" p="0"></Nav>
+        <Nav setHome={setHome} home={home} sections={sections} currentSection={currentSection} setCurrentSection = {setCurrentSection} mt="0" p="0"></Nav>
       </>
     )
     }
