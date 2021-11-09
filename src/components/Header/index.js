@@ -23,7 +23,7 @@ const Header = ({ home, setHome }) => {
     return (
       <>
         <Flex w="100%" mt="0" p="0" ml="20">
-            <Link onClick={()=> setHome(true)} as={ReactLink} to="/">
+            <Link onClick={()=> setHome(true)} as={ReactLink} to="/portfolio">
                 <img alt={'logo'} width="20px" height="20px" src={require(`../../assets/icon/AL_logo.png`).default}/>
             </Link>
             
