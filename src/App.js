@@ -22,10 +22,10 @@ function App() {
     <VStack bg={useColorModeValue('platinum', 'darkPurple')} p={10}>
       <Header home={home} setHome={setHome} />
       <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/portfolio" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactForm />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/projects" element={<Portfolio />} />
       </Routes>
       <Footer home={home} ></Footer>
     </VStack>

@@ -10,7 +10,7 @@ const Header = ({ home, setHome }) => {
         name: 'About'
       },
       {
-        name: 'Portfolio'
+        name: 'Projects'
       },
       {
         name: 'Contact'
