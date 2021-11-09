@@ -3,8 +3,9 @@ import { FaLinkedin, FaUserNinja, FaGithub, FaSun } from 'react-icons/fa'
 import { IconButton } from "@chakra-ui/button"
 import { useColorMode } from "@chakra-ui/color-mode"
 import { HStack, Link, Button } from '@chakra-ui/react';
+import Pdf from "../../assets/documents/AnthonyLavezzoResume.pdf"
 
-const Footer = ({ home, setIsResumeOpen }) => {
+const Footer = ({ home }) => {
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === "dark";
 
@@ -21,7 +22,7 @@ const Footer = ({ home, setIsResumeOpen }) => {
             <IconButton icon={<FaGithub />} isRound="true"></IconButton>
             </Link>
             {!home && (
-                <Button onClick={() => setIsResumeOpen(true)}>Resume</Button>
+                <Button onClick={()=> window.open(Pdf)}>Resume</Button>
 
             )}
         </HStack>

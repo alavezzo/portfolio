@@ -4,9 +4,9 @@ import { Image } from '@chakra-ui/image';
 import { useColorMode } from '@chakra-ui/color-mode'
 import { useColorModeValue } from '@chakra-ui/color-mode';
 import React from 'react';
+import Pdf from '../../assets/documents/AnthonyLavezzoResume.pdf';
 
-
-const Hero = ({ setIsResumeOpen }) => {
+const Hero = () => {
 
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
@@ -22,7 +22,7 @@ const Hero = ({ setIsResumeOpen }) => {
                         <Text className={ !isDark ? "gradient" : ''} bgGradient={ isDark ? "linear(to-r, midnightGreen, pink)" : ''} fontSize="7xl" fontWeight="Bold" bgClip="text" >Anthony</Text>
                         <Text color={useColorModeValue("midnightGreen", "platinum")} > Driven and passionate Full Stack Developer. Volunteer Product Manager at Develop For Good. Looking to deepen my knowledge of cutting-edge programming technologies and develop impactful applications.</Text>
                         <Spacer p={2}></Spacer>
-                        <Button onClick={() => setIsResumeOpen(true)}>Resume</Button>
+                        <Button onClick={()=> window.open(Pdf)}>Resume</Button>
                         </Box>  
                         <Image alignSelf="center" mt={"12", "12", "0", "0"}
                         mb={"12", "12", "0", "0"} borderRadius='full'
