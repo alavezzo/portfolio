@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Box, Stack, Text } from '@chakra-ui/react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
-import { useColorModeValue, useColorMode } from '@chakra-ui/color-mode'
+import { useColorMode } from '@chakra-ui/color-mode'
 
 function Nav({ sections, setHome, home, currentSection, setCurrentSection }) {
 

@@ -1,11 +1,16 @@
-const { Contacts } = require('../models');
+const Contacts = require('../models');
+
 
 module.exports = {
-    async createContact({ body }, res) {
-        const contact = await Contacts.create(body);
 
-        if (!user) {
-            return res.status(400).json({ message: 'Something is wrong!' });
-          }
+    createContact({ body }, res) {
+        Contacts.create(body)
+            .then(dbContactsData => res.json(dbContactsData))
+            .catch(err => es.status(400).json({ err}))
+    }, 
+    getContacts(req, res) {
+        Contacts.find({})
+            .then(dbContactsData => res.json(dbContactsData))
+            .catch(err => es.status(400).json({ err}))
     }
 }

@@ -1,7 +1,6 @@
 import Nav from '../Nav';
-import { Flex, Link } from '@chakra-ui/react';
-import {Link as ReactLink } from "react-router-dom";
-import { useMediaQuery } from '@chakra-ui/media-query';
+import { Flex } from '@chakra-ui/react';
+import {Link } from "react-router-dom";
 import React, {useState} from 'react';
 
 const Header = ({ home, setHome }) => {   
@@ -11,7 +10,7 @@ const Header = ({ home, setHome }) => {
         name: 'About'
       },
       {
-        name: 'Portfolio'
+        name: 'Projects'
       },
       {
         name: 'Contact'
@@ -24,8 +23,8 @@ const Header = ({ home, setHome }) => {
     return (
       <>
         <Flex w="100%" mt="0" p="0" ml="20">
-            <Link onClick={()=> setHome(true)} as={ReactLink} to="/">
-                <img width="20px" height="20px" src={require(`../../assets/icon/AL_logo.png`).default}/>
+            <Link onClick={()=> setHome(true)} to={'/portfolio'}>
+                <img alt={'logo'} width="20px" height="20px" src={require(`../../assets/icon/AL_logo.png`).default}/>
             </Link>
             
         </Flex>

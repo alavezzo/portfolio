@@ -1,8 +1,5 @@
-import React, { useState } from 'react';
-import loadable from '@loadable/component';
-import { Flex } from '@chakra-ui/layout';
-
-const Project = loadable(() => import('../Project')) ;
+import React from 'react';
+import Project from '../Project';
 
 const Portfolio = () => {
 

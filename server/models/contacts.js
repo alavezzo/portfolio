@@ -20,4 +20,4 @@ const contactsSchema = new Schema(
 
 const Contacts = model('Contacts', contactsSchema);
 
-module.export = Contacts;
+module.exports =  Contacts ;
