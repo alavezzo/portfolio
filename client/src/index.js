@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { newColor } from './components/styles/theme';
+import { theme } from './components/styles/theme';
 import { ChakraProvider} from '@chakra-ui/react'
 
 
@@ -10,7 +10,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider theme={newColor}>
+    <ChakraProvider theme={theme}>
         <App />
     </ChakraProvider>
   </React.StrictMode>,

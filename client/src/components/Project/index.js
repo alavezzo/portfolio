@@ -5,8 +5,7 @@ import { FaGithub } from 'react-icons/fa';
 
 
 const Project = (props) => {
-     
-    console.log(props)
+
         
     return (
             <Flex p={50} alignItems="center" justifyContent="center">

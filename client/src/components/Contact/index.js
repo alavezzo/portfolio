@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FormControl, Box, FormLabel, Input, Textarea, Button, Spacer} from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode';
+import { createContact  } from '../../utils/API';
 
 const ContactForm = () => {
 
@@ -11,11 +12,27 @@ const ContactForm = () => {
     function handleChange(e) {
 
         setFormState({...formState, [e.target.id]: e.target.value})
+        console.log(formState)
 
     }
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(formState)
+        
+        try {
+            const response = createContact(formState);
+
+            if (!response.ok) {
+                throw new Error('something went wrong')
+            }  
+        } catch (err) {
+            console.error(err)
+        }
+
+        setFormState({
+            name: '',
+            email: '',
+            message: '',
+          });
     }
 
     return (
@@ -25,15 +42,15 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit}>
                     <FormControl isRequired >
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="name">Name:</FormLabel>
-                        <Input bg='platinum' type="text" id="name" defaultValue={name} onBlur={handleChange} ></Input>
+                        <Input bg='platinum' type="text" id="name" value={name} onChange={handleChange} onBlur={handleChange} ></Input>
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="email">Email address:</FormLabel>
-                        <Input bg='platinum' type = "email" id="email" defaultValue={email} onBlur={handleChange}></Input>
+                        <Input bg='platinum' type = "email" id="email" value={email} onChange={handleChange}></Input>
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="message">Message:</FormLabel>
-                        <Textarea bg="platinum" id="message" rows="5" defaultValue={message} onBlur={handleChange}/>
+                        <Textarea bg="platinum" id="message" rows="5" value={message} onChange={handleChange}/>
                     </FormControl>
                     <Button color={useColorModeValue('midnightGreen', 'darkPurple')} bg={useColorModeValue('platinum', 'platinum')} mt="2vh" data-testid='button' type="submit">Submit</Button>
             </form>
