@@ -4,9 +4,8 @@ const config = {
     initialColorMode: "light",
     useSystemColorMode: false,
 }
-const theme = extendTheme({ config })
 
-export const newColor = extendTheme({
+export const theme = extendTheme({
     colors: {
         darkPurple: '#351431',
         rossoCorso: '#21A0A0',
@@ -14,5 +13,6 @@ export const newColor = extendTheme({
         midnightGreen: '#02394A',
         platinum: '#DFE0DC',
         end: '#02444A'
-    }
+    },
+    config
 })

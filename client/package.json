@@ -2,6 +2,7 @@
   "homepage": "https://alavezzo.github.io/portfolio",
   "name": "client",
   "version": "0.1.1",
+  "proxy": "http://localhost:3001",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.12",
