@@ -24,7 +24,7 @@ const Header = ({ home, setHome }) => {
       <>
         <Flex w="100%" mt="0" p="0" ml="20">
             <Link onClick={()=> setHome(true)} to={'/portfolio'}>
-                <img alt={'logo'} width="20px" height="20px" src={require(`../../assets/icon/AL_logo.png`).default}/>
+                <img alt={'logo'} width="20px" height="20px" src={require(`../../assets/icons/AL_logo.png`).default}/>
             </Link>
             
         </Flex>

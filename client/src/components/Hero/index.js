@@ -27,7 +27,7 @@ const Hero = () => {
                         <Image alignSelf="center" mt={["12", "12", "0", "0"]}
                         mb={["12", "12", "0", "0"]} borderRadius='full'
                         backgroundColor={useColorModeValue("darkPurple", "rocketMetallic")} boxShadow="lg"
-                        boxSize="300px" src={require('../../assets/icon/my_character (1).svg').default} />
+                        boxSize="300px" src={require('../../assets/icons/my_character.svg').default} />
                 </Flex> 
             </Stack>
 

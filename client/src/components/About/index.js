@@ -18,7 +18,7 @@ export default function About() {
     
         </Box>
         <Box>
-        <Image maxH='50%' alignSelf='center' src={require('../../assets/icon/my_character.svg').default}/>
+        <Image maxH='50%' alignSelf='center' src={require('../../assets/icons/my_character (1).svg').default}/>
         </Box>
     </Flex>
   );
