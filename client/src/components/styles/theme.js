@@ -9,7 +9,7 @@ export const theme = extendTheme({
         platinum: '#DFE0DC',
         end: '#02444A'
     },
-    config = {
+    config: {
         initialColorMode: "light",
         useSystemColorMode: false,
     }
