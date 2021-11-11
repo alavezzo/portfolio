@@ -19,7 +19,7 @@ function App() {
   return (
  
     <Router>
-    <VStack minHeight={"100%"} bg={useColorModeValue('platinum', 'darkPurple')} p={10}>
+    <VStack minHeight={"100vh"} bg={useColorModeValue('platinum', 'darkPurple')} p={10}>
       <Header home={home} setHome={setHome} />
       <Routes>
           <Route path="/" element={<Hero />} />
