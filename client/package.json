@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alavezzo.github.io/portfolio",
+  "homepage": "lavezzoae.herokuapp.com",
   "name": "client",
   "version": "0.1.1",
   "proxy": "http://localhost:3001",
