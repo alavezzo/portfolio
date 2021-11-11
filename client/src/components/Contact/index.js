@@ -42,15 +42,15 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit}>
                     <FormControl isRequired >
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="name">Name:</FormLabel>
-                        <Input bg='platinum' type="text" id="name" value={name} onChange={handleChange} onBlur={handleChange} ></Input>
+                        <Input bg='platinum' color='black' type="text" id="name" value={name} onChange={handleChange} onBlur={handleChange} ></Input>
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="email">Email address:</FormLabel>
-                        <Input bg='platinum' type = "email" id="email" value={email} onChange={handleChange}></Input>
+                        <Input bg='platinum' color='black' type = "email" id="email" value={email} onChange={handleChange}></Input>
                     </FormControl>
                     <FormControl mt="2vh" isRequired>
                         <FormLabel color={useColorModeValue('platinum')} htmlFor="message">Message:</FormLabel>
-                        <Textarea bg="platinum" id="message" rows="5" value={message} onChange={handleChange}/>
+                        <Textarea bg="platinum" color='black'id="message" rows="5" value={message} onChange={handleChange}/>
                     </FormControl>
                     <Button color={useColorModeValue('midnightGreen', 'darkPurple')} bg={useColorModeValue('platinum', 'platinum')} mt="2vh" data-testid='button' type="submit">Submit</Button>
             </form>
