@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "homepage": "lavezzoae.herokuapp.com",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",

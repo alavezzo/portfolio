@@ -1,8 +1,7 @@
 {
-  "homepage": "lavezzoae.herokuapp.com",
   "name": "client",
   "version": "0.1.1",
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3001/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.12",
@@ -16,21 +15,17 @@
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.1",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
