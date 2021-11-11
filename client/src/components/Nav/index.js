@@ -11,7 +11,7 @@ function Nav({ sections, setHome, home, currentSection, setCurrentSection }) {
     const toggle = () => setIsOpen(!isOpen)
 
     const { colorMode } = useColorMode();
-    const isDark = colorMode === "dark";
+    const isDark = colorMode === "light";
 
     return (
         <>
