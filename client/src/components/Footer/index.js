@@ -7,7 +7,7 @@ import Pdf from "../../assets/documents/AnthonyLavezzoResume.pdf"
 
 const Footer = ({ home }) => {
     const { colorMode, toggleColorMode } = useColorMode();
-    const isDark = colorMode
+    const isDark = colorMode === "dark"
 
     return (
 

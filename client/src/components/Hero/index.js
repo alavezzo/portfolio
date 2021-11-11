@@ -9,7 +9,8 @@ import Pdf from '../../assets/documents/AnthonyLavezzoResume.pdf';
 const Hero = () => {
 
     const { colorMode } = useColorMode();
-    const isDark = colorMode
+
+    const isDark = colorMode === "dark"
     // src='https://avatars.githubusercontent.com/u/84944528?v=4'
     return (
             <Stack pt="2">
